@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Project 77</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<p>My Family Book</p>
+<img id="image" src="Family.png">
+<p id="name">Family Book</p>
+<button id="button" onclick="next()">Next</button>
+<script>
+var images=["Family.png","Daddy_Pig.png","Mummy_Pig.png","Pippa.png"];
+var names=["Family Book","Daddy","Mommy","Aadya"];
+var i=0;
+function next() {
+document.getElementById("image").src=
+  images[i];
+document.getElementById("name").innerHTML=
+names[i];
+i++;
+if(i==4){
+i=0
+  }
+}
+
+
+
+</script>
+    </body>
+    </html>
